@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/titleDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add new class"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_margin="8dp"
+            />
+
+        <EditText
+            android:id="@+id/class_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Class name"
+            android:layout_margin="8dp"/>
+
+        <EditText
+            android:id="@+id/course_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course name"
+            android:layout_margin="8dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <Button
+                    android:layout_weight="0.5"
+                    android:id="@+id/cancel_btn"
+                    android:layout_margin="8dp"
+                    android:layout_width="0dp"
+                    android:background= "@drawable/rounded_button_colored"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"/>
+
+                <Button
+                   android:id="@+id/add_btn"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                   android:background="@drawable/rounded_button_colored"
+                   android:layout_margin="8dp"
+                    android:textColor="@color/white"
+                   android:text="Add" />
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
